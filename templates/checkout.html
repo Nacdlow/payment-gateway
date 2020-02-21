@@ -7,12 +7,10 @@
 	<p>Redirecting you to Stripe...</p>
 	<script src="https://js.stripe.com/v3/"></script>
 	<script>
-		var stripe = Stripe('{{.PublishableKey}}');
-		window.document.onload = function(e){ 
-			stripe.redirectToCheckout({
-			  sessionId: '{{.SessionID}}',
-			}).then(function (result) {});
-		}
+	var stripe = Stripe('{{.PublishableKey}}');
+		stripe.redirectToCheckout({
+		  sessionId: '{{.SessionID}}',
+	}).then(function (result) {});
 	</script>
 </body>
 </html>
