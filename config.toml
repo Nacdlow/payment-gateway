@@ -1,0 +1,14 @@
+stripe_key = "sk_test_b3AZrBGi9i4MDK6Smpi2gtbP00JoCA6M3L"
+publishable_key = "pk_test_71fJgZQVIPb6KD0MPbTzLD4600JFSUtQDJ"
+currency = "gbp"
+
+[[products]]
+  id = "home-notify"
+  title = "Home Notify"
+  description = "A home notification system"
+  price = "3.49"
+[[products]]
+  id = "scheduler-01"
+  title = "Scheduler"
+  description = "Scheduler allows you to set schedules for your devices and to create routines for when you are not at home or on holiday"
+  price = "1.99"
