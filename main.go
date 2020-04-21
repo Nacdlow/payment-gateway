@@ -59,7 +59,7 @@ func main() {
 		for _, prod := range config.Products {
 			if ctx.Params("id") == prod.Id {
 				prodURL := fmt.Sprintf("https://market.nacdlow.com/%s", prod.Id)
-				succURL := fmt.Sprintf("https://local.nacdlow.com/settings/plugins/%s", prod.Id)
+				succURL := fmt.Sprintf("https://app.nacdlow.com/settings/plugins/%s", prod.Id)
 				price, err := strconv.Atoi(strings.ReplaceAll(prod.Price, ".", ""))
 				if err != nil {
 					ctx.PlainText(200, []byte("Invalid product price!"))
