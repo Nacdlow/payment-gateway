@@ -1,4 +1,4 @@
-module gitlab.com/group-nacdlow/payment-gateway
+module github.com/Nacdlow/payment-gateway
 
 go 1.13
 
